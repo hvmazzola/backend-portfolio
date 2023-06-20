@@ -3,8 +3,8 @@ const mongoose = require ("mongoose");
 const ProjectSchema = new mongoose.Schema({
     ferramentas: [
         { 
-            _id: { type: mongoose.Schema.Types.ObjectId, required: true, unique: true, ref: "ferramentas" },
-            nome: { type: String, required: true, unique: true },
+            _id: { type: mongoose.Schema.Types.ObjectId, required: true, ref: "ferramentas" },
+            nome: { type: String, required: true },
             createdAt: { type: Date, required: true, default: Date.now() },
         }
     ],

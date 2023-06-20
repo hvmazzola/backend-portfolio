@@ -6,8 +6,8 @@ const { validaIdParams, validaIdBody, validaProject, validaFerramentasProject } 
 const paginacao = require("../middleware/paginacao.middleware");
 
 // rotas get
-router.get("/findById/:id", authMiddleware, validaIdParams, projectController.findProjectByIdController);
-router.get("/findAll", authMiddleware, paginacao, projectController.findAllProjectsController);
+router.get("/findById/:id", validaIdParams, projectController.findProjectByIdController);
+router.get("/findAll", paginacao, projectController.findAllProjectsController);
 
 // rotas post
 router.post("/create", authMiddleware, validaProject, projectController.createProjectController);
