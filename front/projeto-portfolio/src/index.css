@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;700;900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+@layer components {
+    .menu-tab {
+        @apply text-gray-800 cursor-pointer select-none;
+    }
+    .active-menu-tab {
+        @apply rounded-full px-4 py-2 text-white select-none;
+    }
+}
+
+.bg-primary {
+    background-color: #02C39A;
+}
+
+.bg-secondary {
+    background-color: #edede9;
+}
+
+.bg-cards {
+    background-color: #028090;
+}
+
+.home-banner {
+    background-color: #028090;
+    height: 400px;
+}
+
+.banner {
+    background-color: #028090;
+}
+
+.text-primary {
+    color: #02C39A;
+}
